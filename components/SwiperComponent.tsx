@@ -1,11 +1,10 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 import 'swiper/css';
 import 'swiper/css/pagination';
 import Image from 'next/image';
-
 import { Pagination } from 'swiper/modules';
+
 
 export default function App() {
   return (
@@ -18,7 +17,7 @@ export default function App() {
           '--swiper-pagination-color': 'var(--color-primary)',
           '--swiper-pagination-bullet-inactive-color': 'var(--color-primary)',
           '--swiper-pagination-bullet-inactive-opacity': '0.3',
-        }}>
+        } as React.CSSProperties}>
         <SwiperSlide>
           <div className='max-w-800 mx-4 sm:mx-auto flex flex-wrap justify-between mt-6 mb-12 sm:my-16'>
             <div className=''>
